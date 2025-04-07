@@ -4,7 +4,14 @@ LOAD DATA INTO BRONZE SCHEMA
 ==========================================================================
 Script Purpose:
   This script loades data from csv file into bronze schema tables with particiular rules. 
-  Script prints appropriate messages about every process. 
+  Script prints appropriate messages about every process.
+  It perform the following actions:
+  - Truncates table before loading data.
+  - Loades data into bronze tables using BULK INSERT from csv files.
+
+
+Usage Example:
+EXECUTE bronze.load_bronze;
 */
 
 
