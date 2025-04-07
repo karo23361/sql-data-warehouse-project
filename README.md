@@ -6,4 +6,3 @@ Project demonstrate a data warehousing and analytics solution, from building a d
 
 ---
 
-
