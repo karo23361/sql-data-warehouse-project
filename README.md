@@ -36,10 +36,43 @@ This diagram illustrates a **3-layer data architecture** designed to transform r
 - **Analytics-Ready**: Gold Layer enables fast reporting and BI tools.  
 - **Traceability**: Preserves raw data (Bronze) while enabling transformations.
 
+---
+
 ## 🧱 Integration Model
 
 ![Diagram_2 drawio](https://github.com/user-attachments/assets/9983fe49-c689-4a3e-b868-35960df847df)
 
+---
 
+## 🌟 Star Schema Overview**  
+
+![Diagram_3 drawio (1)](https://github.com/user-attachments/assets/3c975710-d9b2-4790-8c90-af4d352a6009)
+
+A **denormalized** data model optimized for analytics, centered around a `fact_sales` table with linked dimension tables (`dim_customers`, `dim_products`).  
+
+#### **📊 Fact Table**  
+**`gold.fact_sales`**  
+- **Measures**: `sales_amount`, `quantity`, `price`  
+- **Keys**: Foreign keys (`FK1`, `FK2`) to dimensions (`product_key`, `customer_key`)  
+- **Process Metrics**: `order_date`, `shipping_date`, `due_date`  
+
+#### **📐 Dimension Tables**  
+1. **`gold.dim_customers`**  
+   - **PK**: `customer_key` (surrogate key)  
+   - **Attributes**: Demographics (`country`, `gender`, `birthdate`), identifiers (`customer_id`, `customer_number`)  
+
+2. **`gold.dim_products`**  
+   - **PK**: `product_key` (surrogate key)  
+   - **Attributes**: Hierarchy (`category` > `subcategory`), business context (`cost`, `product_line`, `maintance`), timelines (`start_date`)  
+
+### **⚡ Why It Matters**  
+1. **Query Performance**:  
+   - Simple joins (fact → dimensions) enable fast aggregations (e.g., *"Sales by country and product category"*).  
+2. **Business Readability**:  
+   - Intuitive structure for BI tools (Power BI, Tableau).  
+3. **Historical Tracking**:  
+   - Surrogate keys (`product_key`) allow SCD (Slowly Changing Dimension) patterns for temporal analysis.  
+
+---
 
 
