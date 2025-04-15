@@ -44,7 +44,7 @@ This diagram illustrates a **3-layer data architecture** designed to transform r
 
 ---
 
-## 🌟 Star Schema Overview**  
+## 🌟 Star Schema Overview  
 
 ![Diagram_3 drawio (1)](https://github.com/user-attachments/assets/3c975710-d9b2-4790-8c90-af4d352a6009)
 
