@@ -18,17 +18,21 @@ Dynamic dashboards and **SQL-driven reports** that turn data into meaningful bus
 
 ---
 
-## 🌟 Why This Project Was Created
-This project was designed to bring together key aspects of modern data engineering in one cohesive workflow. It serves as a practical demonstration of how to:
+## 📦 Data Flow Diagram 
 
-- Build a structured and scalable data warehouse using the Medallion Architecture (Bronze, Silver, Gold layers).
+![Diagram_1 drawio](https://github.com/user-attachments/assets/de69d475-0179-4b37-b487-775e71ee1dea) 
 
-- Develop reliable ETL pipelines that move and transform data efficiently across stages.
+This diagram illustrates a **3-layer data architecture** designed to transform raw business data into actionable insights.  
 
-- Apply strong SQL skills for both data transformation and analytical querying.
+## 🔍 Overview  
 
-- Design a clear data model to support insightful, business-driven reporting.
+- **Sources**: CRM & ERP systems feed raw data into the pipeline.  
+- **Bronze Layer**: Stores unprocessed data (e.g., `cm_sales_details`, `cust_info`).  
+- **Silver Layer**: Contains cleaned, standardized, or enriched versions of Bronze tables.  
+- **Gold Layer**: Optimized for analytics (e.g., star schema with `fact_sales`, `dim_customers`).  
 
-- Deliver end-to-end reporting solutions that turn raw data into meaningful insights.
+## 🚀 Why It Matters  
+- **Scalable**: Handles raw to refined data in structured stages.  
+- **Analytics-Ready**: Gold Layer enables fast reporting and BI tools.  
+- **Traceability**: Preserves raw data (Bronze) while enabling transformations.  
 
-- The goal is to show not just technical capabilities, but also an understanding of how to structure data work in a way that's clean, maintainable, and ready for real-world application.
