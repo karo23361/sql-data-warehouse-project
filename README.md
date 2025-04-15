@@ -36,15 +36,10 @@ This diagram illustrates a **3-layer data architecture** designed to transform r
 - **Analytics-Ready**: Gold Layer enables fast reporting and BI tools.  
 - **Traceability**: Preserves raw data (Bronze) while enabling transformations.
 
-## Integration Model
+## 🧱 Integration Model
 
 ![Diagram_2 drawio](https://github.com/user-attachments/assets/9983fe49-c689-4a3e-b868-35960df847df)
 
 
-flowchart LR  
-  CRM -->|crm_prd_info| Products  
-  CRM -->|crm_cust_info| Customers  
-  CRM -->|prd_key + cst_id| Sales  
-  ERP -->|erp_px_cat_g1v2| Products  
-  ERP -->|erp_cust_az12 + erp_loc_a101| Customers  
+
 
