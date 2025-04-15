@@ -18,7 +18,7 @@ Dynamic dashboards and **SQL-driven reports** that turn data into meaningful bus
 
 ---
 
-##🌟 Why This Project Was Created
+## 🌟 Why This Project Was Created
 This project was designed to bring together key aspects of modern data engineering in one cohesive workflow. It serves as a practical demonstration of how to:
 
 - Build a structured and scalable data warehouse using the Medallion Architecture (Bronze, Silver, Gold layers).
